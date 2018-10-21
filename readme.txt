@@ -3,6 +3,7 @@ git is a free software under the GPL
 git has a mutable index called stage
 git tracks changes of files
 
+learn how to use branch
 
 commands:
 
@@ -21,3 +22,5 @@ git reflog // list all log history(include backward)
 
 git reset --hard HEAD^ // HEAD^ last commit HEAD^^ the one befor last HEAD~100
 git reset --hard (commit number) // only the first few digits are enough
+git reset HEAD file // unstage current stage for file
+git checkout -- file // discard changes in working area, relative to the stage area or the last commit (back to last add or last commit)
