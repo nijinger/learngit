@@ -1,7 +1,7 @@
 git is a distributed version control system
 git is a free software under the GPL
 git has a mutable index called stage
-git tracks changes
+git tracks changes of files
 
 
 commands:
@@ -14,6 +14,8 @@ git commit -m "instrcutions of modification"
 
 git status // check which file(s) has been modified since last commit
 git diff file // compare file difference between current and last commit
+git diff HEAD -- file // comprae file difference between HEAD and current file
+git diff HEAD^ HEAD^^ -- file // compare file difference between HEAD^ and HEAD^^
 git log // list all commit forward
 git reflog // list all log history(include backward)
 
